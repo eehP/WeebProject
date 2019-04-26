@@ -1,19 +1,37 @@
 h1
 {
+
 	text-align: center;
     font-family: "Times New Roman" , arial;
     text-decoration: underline;
     font-style: italic ;  
-    color:#144466
+    color:#144466;
+
 }
 
 #menu_haut{
-	text-align: center;
+text-align: center;
 font-style: #0c2c42;
 }
 
 
 body{
 
-	background-color:#f2f5f6
+	background-color:#f2f5f6;
+	
+}
+
+header{
+    background-image: linear-gradient(#c7c8c9,#f2f5f6);
+}
+
+footer{
+text-align: center;
+position:absolute;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;
+
+
 }
