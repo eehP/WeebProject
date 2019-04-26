@@ -1,5 +1,19 @@
 h1
 {
-   font-family: "Times New Roman" , arial;
+	text-align: center;
+    font-family: "Times New Roman" , arial;
     text-decoration: underline;
+    font-style: italic ;  
+    color:#144466
+}
+
+#menu_haut{
+	text-align: center;
+font-style: #0c2c42;
+}
+
+
+body{
+
+	background-color:#f2f5f6
 }
