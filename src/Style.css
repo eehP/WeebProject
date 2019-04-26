@@ -14,17 +14,24 @@ h1
 #menu_haut{
 text-align: center;
 font-style: #0c2c42;
-background-color: #f2f5f6 ;
+}
+#email{
+width: 500px;
+text-align: center;
 }
 
+#password{
+	width: 500px;
+text-align: center;
 
+}
 
 body{
-background-color: #f2f5f6 ;
+background-color:#c7c8c9;
 }
 
 header{
-background-image: linear-gradient(#c7c8c9,#f2f5f6);
+background-image: linear-gradient(#c7c8c9,white	);
 }
 
 footer{
@@ -32,5 +39,4 @@ text-align: center;
 position:absolute;
 bottom:0;
 width:100%;
-background-color: #f2f5f6 ;
-}
+
