@@ -9,21 +9,40 @@ h1
  
 }
 
+h2
+{
+
+	text-align: center;
+    font-family: "Times New Roman" , arial;
+    font-style: italic ;  
+    color:#144466;
+ 
+}
+
 
 
 #menu_haut{
 text-align: center;
 font-style: #0c2c42;
+
 }
 #email{
 width: 500px;
 text-align: center;
+  margin:auto;
+  display:block;
 }
 
 #password{
 	width: 500px;
 text-align: center;
-
+  margin:auto;
+  display:block;
+}
+#carousel{
+    margin:auto;
+  display:block;
+width:25%;
 }
 
 body{
