@@ -1,28 +1,56 @@
 h1
 {
-
 	text-align: center;
     font-family: "Times New Roman" , arial;
     text-decoration: underline;
     font-style: italic ;  
     color:#144466;
-
 }
+
+h3
+{
+	text-align: center;
+    font-family: "Times New Roman" , arial;
+    font-style: italic ;  
+    color:#144466;
+}
+
+
 
 #menu_haut{
 text-align: center;
 font-style: #0c2c42;
+
+}
+#email{
+width: 500px;
+text-align: center;
+  margin:auto;
+  display:block;
+}
+
+#password{
+	width: 500px;
+text-align: center;
+  margin:auto;
+  display:block;
+}
+#carousel{
+    margin:auto;
+  display:block;
+width:25%;
+}
+#presentation{
+	float: right;
 }
 
 
 body{
-
-	background-color:#f2f5f6;
-	
+background-color:#c7c8c9;
 }
 
 header{
-    background-image: linear-gradient(#c7c8c9,#f2f5f6);
+background-image: linear-gradient(#c7c8c9,white	);
 }
 
 footer{
@@ -30,8 +58,14 @@ text-align: center;
 position:absolute;
 bottom:0;
 width:100%;
-padding-top:50px;
-height:50px;
+}
+ aside{ 
+    border: 1px solid black;
+ 	display:block;
+	width:100%;
+    text-align: right;
+}
 
-
+p{
+		float:right;
 }
