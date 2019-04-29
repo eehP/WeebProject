@@ -2,7 +2,7 @@
 /* Connexion a WeebBase*/
 function dbConnect($server, $user, $pwd))
 {
-	if (!$ressource=mysql_connect($server, $user, $pwd)) 
+	if (!$ressource=mysql_connect($server, $user, $pwd, $db)) 
 		return pseudoHandlerError(mysql_errno(),mysql_error());
 	if (!mysql_select_db($db, $ressource))
 		return pseudoHandlerError(mysql_errno(),mysql_error());
