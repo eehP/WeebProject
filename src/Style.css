@@ -22,14 +22,12 @@ h4
     text-decoration: underline;
     color:#144466;
 }
-h5{
-
-   text-align: left;
+h5
+{
+  text-align: left;
     font-family: "Times New Roman" , arial;
     font-style: italic ;  
-   
     color:#144466;
-}
 }
 
 
@@ -57,7 +55,7 @@ display:block;
 float: center;
 position: absolute;
 top: 250px;
-right: 550px;
+right: 575px;
 
 }
 #presentation{
@@ -94,11 +92,9 @@ right: :500px
 }
 
 #TxtPres{
-    font-family: "Times New Roman" , arial;
-    font-style: italic ;  
-    color:#144466;
+  float:right;
     position: fixed;
-top: 340px;
+top: 400px;
 right: 250px;
 
 }
