@@ -2,10 +2,10 @@
 
 <?php
 if(!isset($_GET['login']) && !isset($_GET['motdepasse']))
-    redirectLink('connexion.php')
+    redirectLink('../connexion.php')
 
-require ('config.php');
-require ('fonction.php');
+require ('./config.php');
+require ('./fonction.php');
 
 // Echappement de caractere
 $login = killHack($_GET('login'));
