@@ -1,0 +1,5 @@
+Create table if not exists Table_utilisateur (id int(3) NOT NULL PRIMARY KEY,
+user varchar(20) not null,
+password varchar(40) not null,
+nbr_connexion int(1)
+)
