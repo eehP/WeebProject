@@ -32,7 +32,7 @@ function pseudoHandlerError($errno,$error,$query=NULL)
 	die('Une erreur est survenue dans l\'execution de la requete : <br/>'.$query.' <br/><strong>Erreur détecté - numero'.$errno.' - '.$error.'<strong>');
 }
 /* Redirection de page */
-functin redirectLink($link)
+function redirectLink($link)
 {
 	header('Location: '.strval($link));
 	exit;
