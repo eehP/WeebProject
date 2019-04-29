@@ -14,6 +14,15 @@ h3
     font-style: italic ;  
     color:#144466;
 }
+h4
+{
+  text-align: center;
+    font-family: "Times New Roman" , arial;
+    font-style: italic ;  
+    text-decoration: underline;
+    color:#144466;
+}
+
 
 
 
@@ -36,9 +45,12 @@ text-align: center;
   display:block;
 }
 #carousel{
-    margin:auto;
-  display:block;
-width:25%;
+  width:300px;
+display:block;
+
+text-align: center;
+margin:auto;
+position:absolute;
 }
 #presentation{
 	float: right;
@@ -68,4 +80,10 @@ width:100%;
 
 p{
 		float:right;
+}
+
+
+.container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
 }
