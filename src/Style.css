@@ -16,14 +16,19 @@ h3
 }
 h4
 {
-  text-align: center;
+  text-align: left;
     font-family: "Times New Roman" , arial;
     font-style: italic ;  
     text-decoration: underline;
     color:#144466;
 }
-
-
+h5
+{
+  text-align: left;
+    font-family: "Times New Roman" , arial;
+    font-style: italic ;  
+    color:#144466;
+}
 
 
 #menu_haut{
@@ -47,10 +52,11 @@ text-align: center;
 #carousel{
   width:300px;
 display:block;
+float: center;
+position: absolute;
+top: 250px;
+right: 575px;
 
-text-align: center;
-margin:auto;
-position:absolute;
 }
 #presentation{
 	float: right;
@@ -71,19 +77,24 @@ position:absolute;
 bottom:0;
 width:100%;
 }
- aside{ 
-    border: 1px solid black;
- 	display:block;
-	width:100%;
-    text-align: right;
-}
 
 p{
-		float:right;
+	
 }
-
 
 .container {
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px auto;
+}
+#Column2{
+
+right: :500px
+}
+
+#TxtPres{
+  float:right;
+    position: fixed;
+top: 400px;
+right: 250px;
+
 }
