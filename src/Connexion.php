@@ -16,7 +16,7 @@
 // $message="";
 if(count($_POST)>0) {
   $conn = mysqli_connect("localhost","root","root","WeebBase");
-  $result = mysqli_query($conn,"SELECT * FROM Table_utilisateur WHERE user='" . $_POST["login"] . "' and password = '". $_POST["password"]."'");
+  $result = mysqli_query($conn,"SELECT * FROM Table_utilisateur WHERE user='" . $_POST["username"] . "' and password = '". $_POST["password"]."'");
   $count  = mysqli_num_rows($result);
   if($count==0) {
     $message = "Invalid Username or Password!";
@@ -44,7 +44,7 @@ if(count($_POST)>0) {
 			<tr class="tablerow">
 			<td>
 
-			<input type="text" name="login" placeholder="User Name" class="login-input" id="email"></td>
+			<input type="text" name="username" placeholder="User Name" class="login-input" id="email"></td>
 			
       </tr>
 			<tr class="tablerow">
