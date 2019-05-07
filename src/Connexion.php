@@ -11,11 +11,6 @@
   <title>Connexion</title>
   </head>
 
-
-
-
-
-
 <body>
 <?php
 // $message="";
@@ -26,7 +21,10 @@ if(count($_POST)>0) {
   if($count==0) {
     $message = "Invalid Username or Password!";
   } else {
-    $message = "You are successfully authenticated!";
+    $_SESSION['loggedin'] = true;
+    $_SESSION['username'] = $username
+    header('Location: ./Auth/accueilAuth.php');
+    // $message = "You are successfully authenticated!";
   }
 }
 ?>
@@ -62,6 +60,8 @@ if(count($_POST)>0) {
 			</tr>
 		</table>
 </form>
+
+<div class="message"> <?php if($message!="") { echo $message; } ?> </div>
 
 
 
