@@ -24,6 +24,7 @@ if( !mysql_num_rows(($requete = dbQuery($query))))
 $row = mysql_fetch_array($requete, MYSQL_ASSOC);
 
 //On verifie la correspondance login <=> mdp
+
 if (!mysql_num_rows((dbQuery($query."AND pass='".$motdepasse."'")))
 {
 	list($fullDate, $fullHour) = explode(' ', $row['dates']);
