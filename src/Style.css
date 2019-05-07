@@ -43,7 +43,7 @@ text-align: center;
   display:block;
 }
 
-#password{
+#login-input{
 	width: 500px;
 text-align: center;
   margin:auto;
