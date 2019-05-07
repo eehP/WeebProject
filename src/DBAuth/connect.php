@@ -1,5 +1,13 @@
 <!-- connect.php -->
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+I'm here
+</body>
+</html>
 <?php
 if(!isset($_GET['login']) && !isset($_GET['motdepasse']))
     redirectLink('../connexion.php')
