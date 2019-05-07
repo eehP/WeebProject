@@ -51,11 +51,9 @@ text-align: center;
 }
 #carousel{
   width:300px;
-display:block;
-float: center;
 position: absolute;
 top: 250px;
-right: 575px;
+right: 555px;
 
 }
 #presentation{
@@ -63,9 +61,6 @@ right: 575px;
 }
 
 
-body{
-background-color:#c7c8c9;
-}
 
 header{
 background-image: linear-gradient(#c7c8c9,white	);
