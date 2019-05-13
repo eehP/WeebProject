@@ -13,7 +13,7 @@
 
 <body>
 <?php
-// $message="";
+$message="";
 if(count($_POST)>0) {
   $conn = mysqli_connect("localhost","root","root","WeebBase");
   $result = mysqli_query($conn,"SELECT * FROM Table_utilisateur WHERE user='" . $_POST["username"] . "' and password = '". $_POST["password"]."'");
@@ -34,7 +34,7 @@ if(count($_POST)>0) {
   <br><br><br><br><br>
 
 
-	<form name="frmUser" method="post" action="">
+	<form name="frmUser" method="post" action="conn.php">
 	<div class="message"><!-- <?php if($message!="") { echo $message; } ?> --></div>
 		<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
 
