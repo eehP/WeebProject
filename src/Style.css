@@ -70,8 +70,7 @@ right: 555px;
 
 
 header{
-  grid-column-start: 1;
-grid-column-end: span 5;
+
 background-image: linear-gradient(#c7c8c9,white	);
 }
 body{
@@ -107,7 +106,6 @@ right: 250px;
 }
 
 
-
-#txtinfo{
-
+#Img1{
+  display: none;
 }
