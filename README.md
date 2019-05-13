@@ -27,7 +27,7 @@ Page d’acceuil complete avec :
 - Style for login page
 - Check if user is logged before accessing to the auth part of the website
 - Cleaning of the website link
-- Emploi du temps
+
 
 # Done
 
@@ -37,6 +37,6 @@ Page d’acceuil complete avec :
 - DB for login purpose
 - img folder
 - Backbone of the website
-
+- Emploi du temps
 
 
