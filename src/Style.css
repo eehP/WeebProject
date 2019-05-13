@@ -39,8 +39,6 @@ text-align: right;
 
 
 #menu_haut{
-grid-column: 2/4;
-grid-row: 3/5;
 text-align: center;
 font-style: #0c2c42;
 
@@ -59,12 +57,12 @@ text-align: center;
   display:block;
 }
 #carousel{
-  width:300px;
+width:300px;
 position: absolute;
 top: 250px;
 right: 555px;
-
 }
+
 #presentation{
 	float: right;
 }
@@ -77,9 +75,7 @@ grid-column-end: span 5;
 background-image: linear-gradient(#c7c8c9,white	);
 }
 body{
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20% ;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+
 }
 footer{
 text-align: center;
@@ -87,19 +83,15 @@ position:absolute;
 bottom:0;
 width:100%;
 }
-.PhotoIndex{
 
-grid-column-start: 2;
-grid-row-start: 2;
-}
+
 
 p{
 	
 }
 
 .container {
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
+
 }
 
 #TxtPres{
@@ -113,5 +105,5 @@ right: 250px;
 
 
 #txtinfo{
-  grid-area: 4 / 4 / 5 /5;
+
 }
