@@ -23,6 +23,7 @@ session_start();
 <p>Bonjour et bienvenue sur le site de l'ecole !</p>
 
 <ul>
+	<li><a href="./Emploidutemps.html">Afficher les emplois du temps</a></li>
 	<li><a href="./Contact.html">Contactez l'école</a> </li>
 	<li><a href="../../index.html">Deconnexion</a> </li>
 	<li><a href="./trombinoscope.html">Voir le trombinoscope de la classe</a> </li>
