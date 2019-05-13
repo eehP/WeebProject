@@ -14,12 +14,9 @@ if(count($_POST)>0) {
   $count  = mysqli_num_rows($result);
   if($count==0) {
     $message = "Invalid Username or Password!";
-    header('Location: ../Member2.php');
+    header('Location: ../Connexion.html');
   } else {
-    session_start();
-    $_POST['loggedin'] = true;
-    $_POST['username'] = $_POST[username];
-    header('Location: ../Member.php');
+    header('Location: ../Auth/AccueilAuth.html');
     $message = "You are successfully authenticated!";
   }
 }

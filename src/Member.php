@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (isset($_POST'loggedin']) && ($_POST['loggedin']) == true) {
+if (isset($_SESSION['loggedin']) && ($_SESSION['username']) == true) {
     echo "Welcome to the member's area, " . $_POST['username'] . "!"; 
     header('Location: ../Auth/accueilAuth.html')
 } else {
