@@ -16,8 +16,7 @@ if(count($_POST)>0) {
     $message = "Invalid Username or Password!";
     header('Location: ../Connexion.html');
   } else {
-    session_start();
-    header('Location: ../../AUTH/AccueilAuth.html');
+    header('Location: ../Auth/AccueilAuth.html');
     $message = "You are successfully authenticated!";
   }
 }
