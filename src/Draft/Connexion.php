@@ -58,21 +58,39 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
 <?php 
 
-  include ('champ.php');
-  include('database.php');
+  //include ('champs.php');
+  include 'database.php';
 
   
   if(isset($_POST['Email'],$_POST['Password'])){
     if (!empty($_POST['Email'] and $_POST['Password'])){
-      echo " thanks $_POST['Email'] and $_POST['Password']" ;
-    }
-    else 
-      echo "one of these cases is empty";
-  }
+      $Email = $_POST['Email'];
+      $passw = $_POST['Password'];
+      $request = mysqli_query($conn,"select `Password` from `user` where `Id` like '$Email' ");
+      $resultchek = mysqli_num_rows($request);
+      if ($resultchek > 0){
+        while ($row = mysqli_fetch_assoc($request)) {
+             if ($row["Password"] != $passw){
+                echo "incorrect password";
+             }
+             else 
+              header("Location: http://localhost:9090/php_wamp/trombinoscope.html");
 
+        }
+        }
+        else 
+          echo "Vous ne disposer pas encore d'un compte";
+      
+      }
+    if (empty($_POST['Email'] or $_POST['Password'])){
+      header("Location: http://localhost:9090/php_wamp/Connexion.php");
+      }
+
+    //else 
+        //echo "one of these cases is empty ";
+    }
 ?>
 
 </body>
