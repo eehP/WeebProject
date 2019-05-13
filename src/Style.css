@@ -85,27 +85,10 @@ width:100%;
 
 
 
-p{
-
-
-
-
-	
-}
-
-.container {
-
-}
-
 #TxtPres{
   float:right;
     position: fixed;
 top: 400px;
 right: 250px;
 
-}
-
-
-#Img1{
-  display: none;
 }

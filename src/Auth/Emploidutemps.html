@@ -17,27 +17,38 @@
 
   <div class="text-center" >
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-secondary">Classe de Seconde</button>
-  <button type="button" class="btn btn-secondary">Classe de Premiere</button>
-    <button type="button" class="btn btn-secondary">Classe de Terminale</button>
-
-
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="#">Dropdown link</a>
-      <a class="dropdown-item" href="#">Dropdown link</a>
-    </div>
-  </div>
+  <button id="bouton1" type="button"  class="btn btn-secondary">Classe de Seconde </button> 
+  <button id="bouton2" type="button" class="btn btn-secondary">Classe de Premiere</button>
+    <button id="bouton3" type="button" class="btn btn-secondary">Classe de Terminale</button>
 </div>
 </div>
 
-
+<div id="imgemploidutemps">
+<img src="../../img/emploi_du_temps-2.png" style="display:none" id="div1">
+<img src="../../img/emploi_du_temps-3.png" style="display:none" id="div2">
+<img src="../../img/emploi_du_temps-4.png"style="display:none" id="div3">
+</div>
 	<!-- On pourrait selectionner via un menu deroulant 3 emploie du temps different. -->
 	
+<script> 
+document.getElementById('bouton1').onclick = function(e){
+document.getElementById('div1').style.display = "block";
+document.getElementById('div2').style.display = "none";
+document.getElementById('div3').style.display = "none";
+}
 
+document.getElementById('bouton2').onclick = function(e){
+document.getElementById('div1').style.display = "none";
+document.getElementById('div2').style.display = "block";
+document.getElementById('div3').style.display = "none";
+}
+
+document.getElementById('bouton3').onclick = function(e){
+document.getElementById('div1').style.display = "none";
+document.getElementById('div2').style.display = "none";
+document.getElementById('div3').style.display = "block";
+}
+</script>
 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
