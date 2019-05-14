@@ -62,14 +62,6 @@ text-align: center;
   margin:auto;
   display:block;
 }
-.carousel{
-
-width:500px;
-position: absolute;
-top: 250px;
-right: 555px;
-  
-}
 #carousel{
 width:500px;
 position: absolute;
@@ -128,4 +120,3 @@ position: absolute;
 top: 25%;
 right: 50%;
 }
-
