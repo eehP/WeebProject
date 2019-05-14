@@ -1,7 +1,7 @@
 create database WeebBase character set 'UTF8';
 use WeebBase;
 
-CREATE TABLE IF NOT EXISTS `table_utilisateur`( 
+CREATE TABLE IF NOT EXISTS `Table_utilisateur`( 
 
 `id`int(3) NOT NULL AUTO_INCREMENT, 
 
