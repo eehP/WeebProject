@@ -1,7 +1,7 @@
 h1
 {
 	text-align: center;
-    font-family: "Times New Roman" , arial;
+    font-family: "Verdana" , arial;
     text-decoration: underline;
     font-style: italic ;  
     color:#144466;
@@ -100,3 +100,9 @@ text-align: right;
   
 }
 
+#map{
+width:300px;
+position: absolute;
+top: 25%;
+right: 50%;
+}
