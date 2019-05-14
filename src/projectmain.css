@@ -17,7 +17,7 @@ ul {
 }
 ul li {
 	position: relative;
-	bottom: 140px;
+	bottom: 290px;
 	float: left;
 	width: 200px;
 	height: 40px;
@@ -59,6 +59,13 @@ ul li:hover ul li{
 
 }
 
+.paragraph {
+	position: relative;
+	color: white;
+	left: 50px;
+	top: 90px;
+}
+
 .image{
 
 	
@@ -67,7 +74,7 @@ ul li:hover ul li{
 	position: fixed;
 	left: 0;
 	right: 0;
-	opacity: .9;
+	opacity: .4;
 	background :rgba(0,0,0,.7);
 	
 	
