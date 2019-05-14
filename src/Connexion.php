@@ -18,6 +18,7 @@
 
 	<form name="frmUser" method="post">
 	<div class="message">
+		<?php if($message!="") { echo $message; } ?> 
 	</div>
 		<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
 
@@ -43,7 +44,6 @@
 			</tr>
 		</table>
 </form>
-
 <div class="message"> <?php if($message!="") { echo $message; } ?> </div>
 
 <?php
@@ -60,6 +60,8 @@ if(count($_POST)>0)
   }
 }
 ?>
+
+
 
 
 
