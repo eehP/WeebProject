@@ -99,12 +99,10 @@ right: 250px;
 
 }
 
+
 #imgemploidutemps{
-    position: absolute;
-  right: 20%;
-text-align: right;
-  
-}
+text-align: center;
+ }
 
 #map{
 width:300px;
