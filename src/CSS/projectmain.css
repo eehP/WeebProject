@@ -2,7 +2,7 @@ body{
 	margin: 0px;
 	background-size: cover;
 	background-attachment: fixed;
-	background: url('../img/cover3.jpg') no-repeat;
+	background: url('../../img/cover3.jpg') no-repeat;
 	background-size:100%;
 }
 
