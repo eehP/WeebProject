@@ -1,11 +1,11 @@
 <?php
 
 
-@$conn = new mysqli("localhost","root","");
+$conn = mysqli_connect("localhost","root","","");
 
-if ($conn-> connect_error){
+if (!$conn){
 
-	die("connexion failed :".$conn-> connect_error);
+	die("connexion failed :".mysqli_connect_error());
 }
 
 ?>

@@ -1,7 +1,7 @@
 h1
 {
 	text-align: center;
-    font-family: "Times New Roman" , arial;
+    font-family: "Verdana" , arial;
     text-decoration: underline;
     font-style: italic ;  
     color:#144466;
@@ -30,6 +30,19 @@ h5
     color:#144466;
 }
 
+.ButConnex{
+  position: absolute;
+  right: 20%;
+text-align: right;
+}
+.Butretour{
+  position: absolute;
+  left: 5%;
+text-align: left;
+top: 5%
+
+}
+
 
 #menu_haut{
 text-align: center;
@@ -43,53 +56,47 @@ text-align: center;
   display:block;
 }
 
-#password{
+#login-input{
 	width: 500px;
 text-align: center;
   margin:auto;
   display:block;
 }
 #carousel{
-  width:300px;
-display:block;
-float: center;
+width:300px;
 position: absolute;
 top: 250px;
-right: 575px;
-
+right: 555px;
 }
+
 #presentation{
 	float: right;
 }
 
 
-body{
-background-color:#c7c8c9;
-}
 
 header{
 background-image: linear-gradient(#c7c8c9,white	);
 }
 
+
+
+
+body{
+
+}
+
+
+
+
 footer{
 text-align: center;
-position:absolute;
+position: fixed;
 bottom:0;
 width:100%;
 }
 
-p{
-	
-}
 
-.container {
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
-}
-#Column2{
-
-right: :500px
-}
 
 #TxtPres{
   float:right;
@@ -97,4 +104,19 @@ right: :500px
 top: 400px;
 right: 250px;
 
+}
+
+
+#imgemploidutemps{
+width:300px;
+position: absolute;
+top: 25%;
+right: 60%;
+ }
+
+#map{
+width:300px;
+position: absolute;
+top: 25%;
+right: 50%;
 }

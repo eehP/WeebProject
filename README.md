@@ -20,8 +20,23 @@ Page d’acceuil complete avec :
 - Trombisnoscope : Information sur la personne -> possibilité d’envoi de mail
 
 
+
 # TO-DO
 
-Create source folder
+- Filling web page with content
+- Style for login page
+- Check if user is logged before accessing to the auth part of the website
+- Cleaning of the website link
+
+
+# Done
+
+- Create source folder
+- Global CSS
+- Login form
+- DB for login purpose
+- img folder
+- Backbone of the website
+- Emploi du temps
 
 

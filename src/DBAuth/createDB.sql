@@ -1,4 +1,4 @@
-create database weebBase character set 'UTF8';
+create database WeebBase character set 'UTF8';
 use WeebBase;
 
 CREATE TABLE IF NOT EXISTS `table_utilisateur`( 
@@ -17,8 +17,3 @@ PRIMARY KEY (`id`),
 
 UNIQUE KEY `user` (`user`)
 );
-
-
-
-
-
