@@ -9,9 +9,7 @@ CREATE TABLE IF NOT EXISTS `Table_utilisateur`(
 
 `pass`varchar(40) COLLATE latin1_general_ci NOT NULL, 
 
-`nbr_connect` tinyint(1) NOT NULL DEFAULT 0, 
-
-`dates`datetime NOT NULL, 
+`nbr_connect` tinyint(1) NOT NULL DEFAULT 0,  
 
 PRIMARY KEY (`id`), 
 
