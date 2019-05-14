@@ -108,7 +108,10 @@ right: 250px;
 
 
 #imgemploidutemps{
-text-align: center;
+width:300px;
+position: absolute;
+top: 25%;
+right: 60%;
  }
 
 #map{
