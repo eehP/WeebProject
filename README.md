@@ -17,15 +17,13 @@ Page d’acceuil complete avec :
 ************************************************
 <br>
 - Page Emploi du temps : visionner l’emploi du temps (modifiable par un admin ?)
-- Trombisnoscope : Information sur la personne -> possibilité d’envoi de mail
+- Trombisnoscope : Information sur la personne.
 
 
 
 # TO-DO
 
 - Filling web page with content
-- Style for login page
-- Check if user is logged before accessing to the auth part of the website
 - Cleaning of the website link
 
 
@@ -38,5 +36,5 @@ Page d’acceuil complete avec :
 - img folder
 - Backbone of the website
 - Emploi du temps
-
+- Style for login page
 
