@@ -57,13 +57,13 @@ text-align: center;
 }
 
 #login-input{
-	width: 500px;
+	width: 700px;
 text-align: center;
   margin:auto;
   display:block;
 }
 #carousel{
-width:300px;
+width:500px;
 position: absolute;
 top: 250px;
 right: 555px;
