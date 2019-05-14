@@ -16,7 +16,7 @@
   <br><br><br><br><br>
 
 
-	<form name="frmUser" method="post" action="./DBAuth/conn.php">
+	<form name="frmUser" method="post">
 	<div class="message">
 	</div>
 		<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
@@ -46,7 +46,20 @@
 
 <div class="message"> <?php if($message!="") { echo $message; } ?> </div>
 
-
+<?php
+if(count($_POST)>0) 
+{
+    $conn = mysqli_connect("localhost","root","root","WeebBase");
+  
+    $result = mysqli_query($conn,"SELECT * FROM Table_utilisateur WHERE user='" . $_POST["username"] . "' and pass = '". $_POST["password"]."'");
+  $count  = mysqli_num_rows($result);
+  if($count==0) {
+  $message = 'Mot de passe ou username incorrect.';
+  } else {
+    header('Location: ../Auth/AccueilAuth.html');
+  }
+}
+?>
 
 
 
