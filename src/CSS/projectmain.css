@@ -3,7 +3,7 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 	background: url('../../img/cover3.jpg') no-repeat;
-	background-size:100%;
+	background-size:108%;
 }
 
 
@@ -17,10 +17,10 @@ ul {
 }
 ul li {
 	position: relative;
-	bottom: 290px;
+	bottom: 305px;
 	float: left;
 	width: 200px;
-	height: 40px;
+	height: 45px;
 	background-color: black;
 	opacity: .8;
 	line-height: 40px;
@@ -61,7 +61,7 @@ ul li:hover ul li{
 
 .paragraph {
 	position: relative;
-	color: white;
+	color: black;
 	left: 50px;
 	top: 90px;
 }
@@ -88,9 +88,9 @@ ul li:hover ul li{
 .main{
 	position: relative;
 	text-align: center;
-	color: white;
+	color: black;
 	left: 50vh;
-	bottom :50px;
+	bottom :40px;
 
 }
 
@@ -108,8 +108,8 @@ ul li:hover ul li{
 
 .BoutonConnexion{
 	position: relative;
-	top:50vh;
-	left: 100vh;
+	top:1vh;
+	left: 165vh;
 	
 }
 
