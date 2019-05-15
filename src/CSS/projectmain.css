@@ -102,15 +102,6 @@ ul li:hover ul li{
 	top:79vh;
 	color: grey;
 
-	
-
-}
-
-.BoutonConnexion{
-	position: relative;
-	top:1vh;
-	left: 165vh;
-	
 }
 
 .header{
@@ -173,4 +164,12 @@ ul li:hover ul li{
 		transform: translateX(-1000px);
 
 }
+}
+
+.BoutonConnexion{
+	position: relative;
+	top:50vh;
+	left:100vh;
+
+
 }

@@ -18,7 +18,7 @@
 
 	<form name="frmUser" method="post">
 	<div class="message">
-		<?php if($message!="") { echo $message; } ?> 
+		 
 	</div>
 		<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
 
@@ -43,19 +43,19 @@
 			</tr>
 		</table>
 </form>
-<div class="message"> <?php if($message!="") { echo $message; } ?> </div>
+
 
 <?php
 if(count($_POST)>0) 
 {
-    $conn = mysqli_connect("localhost","root","root","WeebBase");
+    $conn = mysqli_connect("localhost","root","","WeebBase");
   
     $result = mysqli_query($conn,"SELECT * FROM Table_utilisateur WHERE user='" . $_POST["username"] . "' and pass = '". $_POST["password"]."'");
   $count  = mysqli_num_rows($result);
   if($count==0) {
   $message = 'Mot de passe ou username incorrect.';
   } else {
-    header('Location: ../Auth/AccueilAuth.html');
+    header('Location: ./Auth/accueilAuth.html');
   }
 }
 ?>

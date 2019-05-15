@@ -133,3 +133,23 @@ p{
 text-align: center;
 
 }
+.Champs{
+  background:none;
+  position: relative;
+  left: 63vh;
+  top:95px;
+
+}
+
+.BoutonValide{
+  position: relative;
+  left:38vh;
+  top:10vh;
+}
+
+.Message{
+  position:relative;
+  top:30vh;
+  left:85vh;
+  color:red;
+}

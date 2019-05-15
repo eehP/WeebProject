@@ -4,28 +4,20 @@
 		<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css" />
+    
 
 	<title>Inscription</title>
-
 <body>
 <header><br>
 	
 		<div class="Butretour">
            <a class="shadow p-2 btn btn-outline-primary" href="../index.html" role="button"> accueil </a>
-       </div>
+       	</div>
 
 
-	<h1>Contact de l'école</h1> <br><br></header>
+	<h1>Inscription</h1> <br><br></header>
   <br><br><br><br>
 
-
-
-<div class="para"><br><br>
- Pseudo :<br><br>
-	mot de passe :<br><br><br>
-	Répeter le mot de passe :<br>
-   </div>
-   
 
 <label>
 	<div id="LabelInscription">
@@ -35,34 +27,60 @@
 
 </label>
 
-	<form method="post" class="text-center"><br>
-		<label><input type="text" name="pseudo"/></label><br><br>
-		<label><input type="password" name="passe"/></label><br><br>
-		<label><input type="password" name="passe2"/></label><br>
-		<a class="shadow p-2 btn btn-outline-primary" href="../index.html" role="button" type="submit"> M'inscrire
-		
+	<div class="Champs">
+	<form action="" method="POST">
+		<pre>
+		pseudo 	 <font color="red">*</font>	<input type="text" name="pseudo" placeholder="pseudo"><br>
+		Password <font color="red">*</font>	<input type="password" name="passe" placeholder="choose Password" ><br>
+		Password <font color="red">*</font>	<input type="password" name="passe2" placeholder="confirm Password"><br></pre>
+					<div class="BoutonValide">
+					<input type="submit" value="M'inscrire" class="shadow p-2 btn btn-outline-primary">
+					</div>
+				
 	</form>
-	
-	<?php
-		$conn = mysqli_connect("localhost","root","root","WeebBase");
-		$passe = $_POST['passe'];
-		$passe2 = $_POST['passe2'];
-		if($passe != $passe2)
-		{
-			$message = 'Les deux mots de passe que vous avez rentrés ne correspondent pas…';
-		}
-		else
-		{	
-			$pseudo = $_POST['pseudo'];
-			mysqli_query($conn,"INSERT INTO `Table_utilisateur` (`user`, `pass`, `nbr_connect`) VALUES ('$pseudo','$passe','0')");
-			$message = 'Compte enregisté, revenez a la page d accueil';
-		}
+	</div>
 
-		if($message!="") 
-		{ 
-			echo $message; 
+	<div class="Message">
+	<?php
+
+			$conn=mysqli_connect("localhost","root","","WeebBase");
+		
+			if(isset($_POST["submit"],$_POST['passe'],$_POST['passe2'])){
+				if(empty($_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
+				header('Location: ./inscription.php');
+				echo "un des champs est vide" ;
+				
+				}
+			}
+
+			if(isset($_POST['pseudo'],$_POST['passe'],$_POST['passe2'] )) {
+				if(!empty($_POST['pseudo'] and $_POST['passe'] and $_POST['passe2'])){
+
+					
+					if($_POST['passe'] != $_POST['passe2']){
+					echo "Les deux mots de passe que vous avez rentrés ne correspondent pas…" ;
+							}
+
+					else {
+
+						$pseudo=$_POST['pseudo'];
+						$passe=$_POST['passe'];
+						$passe2=$_POST['passe2'];
+						$result = mysqli_query ($conn,"select * from `Table_utilisateur` where `user`like '$pseudo' ");
+						$res = mysqli_num_rows($result);
+						if( $res>0){
+							$messages="Un compte est deja associé à cet identifiant.";
+							echo $messages;
+									}
+						else{
+						mysqli_query ($conn,"INSERT INTO `Table_utilisateur` (`user`, `pass`, `nbr_connect`) VALUES ('$pseudo','$passe2','0')");
+						echo "<a style='color:green;'>Compte enregisté, revenez à la page d'accueil</a>";
+						}	
+				}
+			}
 		}
 	?>
+	</div>
 
 
 
