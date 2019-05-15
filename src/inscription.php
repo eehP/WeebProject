@@ -38,7 +38,7 @@
 	<form method="post" class="text-center"><br>
 		<label><input type="text" name="pseudo"/></label><br><br>
 		<label><input type="password" name="passe"/></label><br><br>
-		<label><input type="password" name="passe2"/></label><br>
+		<label><input type="password" name="passe2"/></label><br><br><br>
 		<a class="shadow p-2 btn btn-outline-primary" href="../index.html" role="button" type="submit"> M'inscrire
 		
 	</form>
