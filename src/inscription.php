@@ -30,9 +30,12 @@
 	<div class="Champs">
 	<form action="" method="POST">
 		<pre>
-		pseudo 	 <font color="red">*</font>	<input type="text" name="pseudo" placeholder="pseudo"><br>
-		Password <font color="red">*</font>	<input type="password" name="passe" placeholder="choose Password" ><br>
-		Password <font color="red">*</font>	<input type="password" name="passe2" placeholder="confirm Password"><br></pre>
+		Nom		<font color="red">*</font>	<input type="text" name="Nom" placeholder="Nom"><br>
+		Prenom	<font color="red">*</font>	<input type="text" name="Prenom" placeholder="Prenom"><br>
+		Classe 	<font color="red">*</font>	<input type="" name="pseudo" placeholder="pseudo"><br>
+		pseudo 	<font color="red">*</font>	<input type="text" name="pseudo" placeholder="pseudo"><br>
+		Password<font color="red">*</font>	<input type="password" name="passe" placeholder="choose Password" ><br>
+		Confirm Password<font color="red">*</font>	<input type="password" name="passe2" placeholder="confirm Password"><br></pre>
 					<div class="BoutonValide">
 					<input type="submit" value="M'inscrire" class="shadow p-2 btn btn-outline-primary">
 					</div>
@@ -44,17 +47,17 @@
 	<?php
 
 			$conn=mysqli_connect("localhost","root","","WeebBase");
-		
+
 			if(isset($_POST["submit"],$_POST['passe'],$_POST['passe2'])){
-				if(empty($_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
+				if(empty($_POST['Nom'],$_POST['Prenom'],$_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
 				header('Location: ./inscription.php');
 				echo "un des champs est vide" ;
 				
 				}
 			}
 
-			if(isset($_POST['pseudo'],$_POST['passe'],$_POST['passe2'] )) {
-				if(!empty($_POST['pseudo'] and $_POST['passe'] and $_POST['passe2'])){
+			if(isset($_POST['Nom'],$_POST['Prenom'],$_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
+				if(!empty($_POST['Nom'],$_POST['Prenom'],$_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
 
 					
 					if($_POST['passe'] != $_POST['passe2']){
@@ -62,7 +65,8 @@
 							}
 
 					else {
-
+						$Nom = $_POST['Nom'];
+						$Prenom = $_POST['Prenom'];
 						$pseudo=$_POST['pseudo'];
 						$passe=$_POST['passe'];
 						$passe2=$_POST['passe2'];
@@ -73,7 +77,7 @@
 							echo $messages;
 									}
 						else{
-						mysqli_query ($conn,"INSERT INTO `Table_utilisateur` (`user`, `pass`, `nbr_connect`) VALUES ('$pseudo','$passe2','0')");
+						mysqli_query ($conn,"INSERT INTO `Table_utilisateur` (`Nom`,`Prenom`,`user`, `pass`, `nbr_connect`) VALUES ('Nom','Prenom','$pseudo','$passe2','0')");
 						echo "<a style='color:green;'>Compte enregisté, revenez à la page d'accueil</a>";
 						}	
 				}
