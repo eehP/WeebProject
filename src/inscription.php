@@ -45,7 +45,6 @@
 
 	<div class="Message">
 	<?php
-
 			$conn=mysqli_connect("localhost","root","","WeebBase");
 
 			if(isset($_POST["submit"],$_POST['passe'],$_POST['passe2'])){
@@ -77,7 +76,7 @@
 							echo $messages;
 									}
 						else{
-						mysqli_query ($conn,"INSERT INTO `Table_utilisateur` (`Nom`,`Prenom`,`user`, `pass`, `nbr_connect`) VALUES ('Nom','Prenom','$pseudo','$passe2','0')");
+						mysqli_query ($conn,"INSERT INTO `Table_utilisateur` (`Nom`,`Prenom`,`user`, `pass`, `nbr_connect`) VALUES ('$Nom','$Prenom','$pseudo','$passe2','0')");
 						echo "<a style='color:green;'>Compte enregisté, revenez à la page d'accueil</a>";
 						}	
 				}
@@ -85,9 +84,6 @@
 		}
 	?>
 	</div>
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
