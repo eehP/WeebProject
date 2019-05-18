@@ -30,12 +30,12 @@
 	<div class="Champs">
 	<form action="" method="POST">
 		<pre>
-		Nom		<font color="red">*</font>	<input type="text" name="Nom" placeholder="Nom"><br>
+		Nom   <font color="red">*</font>         <input type="text" name="Nom" placeholder="Nom"><br>
 		Prenom	<font color="red">*</font>	<input type="text" name="Prenom" placeholder="Prenom"><br>
 		Classe 	<font color="red">*</font>	<input type="text" name="classe" placeholder="Classe"><br>
 		pseudo 	<font color="red">*</font>	<input type="text" name="pseudo" placeholder="pseudo"><br>
 		Password<font color="red">*</font>	<input type="password" name="passe" placeholder="choose Password" ><br>
-		Confirm Password<font color="red">*</font>	<input type="password" name="passe2" placeholder="confirm Password"><br></pre>
+	Confirm Password<font color="red">*</font>	<input type="password" name="passe2" placeholder="confirm Password"><br></pre>
 					<div class="BoutonValide">
 					<input type="submit" value="M'inscrire" class="shadow p-2 btn btn-outline-primary">
 					</div>
@@ -45,7 +45,7 @@
 
 	<div class="Message">
 	<?php
-			$conn=mysqli_connect("localhost","root","root","WeebBase");
+			$conn=mysqli_connect("localhost","root","","WeebBase");
 
 			if(isset($_POST["submit"],$_POST['passe'],$_POST['passe2'])){
 				if(empty($_POST['Nom'] or $_POST['Prenom'] or $_POST['classe'] or $_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
@@ -55,8 +55,8 @@
 				}
 			}
 
-			if(isset($_POST['Nom'] or $_POST['Prenom'] or $_POST['classe'] or $_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
-				if(!empty($_POST['Nom'] or $_POST['Prenom'] or $_POST['classe'] or $_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
+			if(isset($_POST['Nom'], $_POST['Prenom'], $_POST['classe'], $_POST['pseudo'], $_POST['passe'], $_POST['passe2'])){
+				if(!empty($_POST['Nom'] and $_POST['Prenom'] and $_POST['classe'] and $_POST['pseudo'] and $_POST['passe'] and $_POST['passe2'])){
 
 					
 					if($_POST['passe'] != $_POST['passe2']){

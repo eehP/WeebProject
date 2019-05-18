@@ -151,7 +151,51 @@ text-align: center;
 
 .Message{
   position:relative;
-  top:30vh;
+  top:10vh;
   left:85vh;
   color:red;
+}
+.menu{
+  position: relative;
+  left: 80vh;
+  bottom: 25vh;
+}
+.menu select {
+    position: relative;
+    width:120px;
+    left: -3vh;
+    bottom:-23px;
+
+  }
+  .menu label {
+    top:  10px;
+    left: .9vh;
+  }
+.ButListeEleve{
+  position: relative;
+  bottom: 2vh;
+  left:15vh;
+}
+.Error{
+
+  position:relative;
+  top:30vh;
+  left:75vh;
+
+} 
+.tableau  th{
+  position:relative;
+  padding-left: 50px;
+  
+}
+.tableau  td{
+  position:relative;
+  padding-left: 50px;
+  padding-top: 20px;
+  
+}
+.tableau {
+  position: relative;
+  left:75vh;
+  top:10vh;
 }

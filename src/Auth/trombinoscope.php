@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html>
 <head>
 	<meta charset="utf-8">
@@ -20,10 +20,8 @@
   <h1>Photo de classes</h1> <br><br></header>
   
  <div class="text-center " >
- <div class="ButListeEleve">
-           <a class="shadow p-2 btn btn-outline-primary" href="./listeEleve.html" role="button"> Voir les élèves</a>
-
-
+      
+</div>
 <section>
 
 
@@ -79,7 +77,7 @@
   </a>
 </div>  
   </div>
-</div>
+
 </section>
 
     </div>
@@ -87,9 +85,48 @@
   
     </div>
   </div>
-</div>
+  
+  <form action="" method="POST">
+      <div class="menu">
+            <div class="form-group">
+                <label for="class" class="col-sm-2 control-label" >classe:</label>
+                <div class="col-sm-2">
+                <select class="form-control" name="classe">
+                    <option value="Seconde">Seconde</option>
+                    <option value="Premiere">Premiere</option>
+                    <option value="Terminale">Terminale</option>
+                </select> 
+                <div class="ButListeEleve">
+                <input type="submit" value="voir les éleves" class="shadow p-2 btn btn-outline-primary" name ="submit">         
+                </div>
+                </div>
+            </div>          
+      </div>
+  </form>
 
 
+  <div class="Error">
+  <?php
+
+    if(isset($_POST['submit'])){
+       if (!empty($_POST['classe'])){
+            $conn = mysqli_connect("localhost","root","","WeebBase");
+            $classe=$_POST['classe'];
+            $requete=mysqli_query($conn,"select `nom`,`prenom`,`classe` from `table_utilisateur` where `Classe` like '$classe' ");
+            $row=mysqli_fetch_all($requete,MYSQLI_ASSOC);
+            $rowcount=mysqli_num_rows($requete);
+            if($rowcount>0){
+
+                header('Location: ../Auth/ListeEleve.php?classe=' . $_POST['classe']);
+            }
+            else
+                echo "<a style='color:red;'>il n'y a pas d'eleves dans la classe $classe</a>";
+            }
+          }
+  
+  ?>
+
+  </div>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

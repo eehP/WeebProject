@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `Table_utilisateur`(
 
 `Prenom` varchar(40) COLLATE latin1_general_ci NOT NULL,
 
-`Classe` varchar(3) COLLATE latin1_general_ci NOT NULL,
+`Classe` varchar(20) COLLATE latin1_general_ci NOT NULL,
 
 `user`varchar(20) COLLATE latin1_general_ci NOT NULL, 
 
