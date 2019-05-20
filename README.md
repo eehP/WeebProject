@@ -23,10 +23,6 @@ Page d’acceuil complete avec :
 
 # TO-DO
 
-- Filling web page with content
-- Cleaning of the website link
-
-
 # Done
 
 - Create source folder
@@ -37,4 +33,7 @@ Page d’acceuil complete avec :
 - Backbone of the website
 - Emploi du temps
 - Style for login page
+- Filling web page with content
+- Cleaning of the website link
+- Link DB to ListeClasse
 
