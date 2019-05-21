@@ -30,12 +30,23 @@
 	<div class="Champs">
 	<form action="" method="POST">
 		<pre>
-		Nom   <font color="red">*</font>         <input type="text" name="Nom" placeholder="Nom"><br>
-		Prenom	<font color="red">*</font>	<input type="text" name="Prenom" placeholder="Prenom"><br>
-		Classe 	<font color="red">*</font>	<input type="text" name="classe" placeholder="Classe"><br>
-		pseudo 	<font color="red">*</font>	<input type="text" name="pseudo" placeholder="pseudo"><br>
-		Password<font color="red">*</font>	<input type="password" name="passe" placeholder="choose Password" ><br>
-	Confirm Password<font color="red">*</font>	<input type="password" name="passe2" placeholder="confirm Password"><br></pre>
+		<a class="Nom">
+		Nom   <font color="red">*</font></a>    <input class="form-control" type="text" placeholder="Nom" name="Nom"><br>
+		<a class="Prenom">
+		Prenom	<font color="red">*</font></a>	<input class="form-control"  type="text" name="Prenom" placeholder="Prenom" ><br>
+		<a class="classcenter">
+		Classe 	<font color="red">*</font></a>
+				<select class="form-control" name="classe">
+                    <option value="Seconde">Seconde</option>
+       			    <option value="Premiere">Premiere</option>
+                    <option value="Terminale">Terminale</option>
+                </select> 
+        <a class="pseudo">
+		pseudo 	<font color="red">*</font></a>	<input class="form-control"  type="text" name="pseudo" placeholder="Pseudo" ><br>
+		<a class="Password">
+		Password<font color="red">*</font></a>	<input class="form-control"  type="Password" name="passe" placeholder="Password" ><br>
+		<a class="Password">
+	Confirm Password<font color="red">*</font></a>	<input class="form-control"  type="Password" name="passe2" placeholder="Confirm Password" ><br></pre>
 					<div class="BoutonValide">
 					<input type="submit" value="M'inscrire" class="shadow p-2 btn btn-outline-primary">
 					</div>
@@ -45,18 +56,18 @@
 
 	<div class="Message">
 	<?php
-			$conn=mysqli_connect("localhost","weeb","weeb","WeebProject");
+			$conn=mysqli_connect("localhost","root","","WeebBase");
 
 			if(isset($_POST["submit"],$_POST['passe'],$_POST['passe2'])){
-				if(empty($_POST['Nom'] or $_POST['Prenom'] or $_POST['classe'] or $_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
+				if(empty($_POST['Nom'] or $_POST['Prenom'] or $_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){
 				header('Location: ./inscription.php');
 				echo "un des champs est vide" ;
 				
 				}
 			}
 
-			if(isset($_POST['Nom'], $_POST['Prenom'], $_POST['classe'], $_POST['pseudo'], $_POST['passe'], $_POST['passe2'])){
-				if(!empty($_POST['Nom'] and $_POST['Prenom'] and $_POST['classe'] and $_POST['pseudo'] and $_POST['passe'] and $_POST['passe2'])){
+			if(isset($_POST['Nom'], $_POST['Prenom'], $_POST['pseudo'], $_POST['passe'], $_POST['passe2'])){
+				if(!empty($_POST['Nom'] and $_POST['Prenom'] and $_POST['pseudo'] and $_POST['passe'] and $_POST['passe2'])){
 
 					
 					if($_POST['passe'] != $_POST['passe2']){
