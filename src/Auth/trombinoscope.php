@@ -110,7 +110,7 @@
 
     if(isset($_POST['submit'])){
        if (!empty($_POST['classe'])){
-            $conn = mysqli_connect("localhost","root","","WeebBase");
+            $conn = mysqli_connect("localhost","weeb","weeb","WeebBase");
             $classe=$_POST['classe'];
             $requete=mysqli_query($conn,"select `nom`,`prenom`,`classe` from `table_utilisateur` where `Classe` like '$classe' ");
             $row=mysqli_fetch_all($requete,MYSQLI_ASSOC);

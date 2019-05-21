@@ -45,7 +45,7 @@
 
 	<div class="Message">
 	<?php
-			$conn=mysqli_connect("localhost","root","","WeebBase");
+			$conn=mysqli_connect("localhost","weeb","weeb","WeebBase");
 
 			if(isset($_POST["submit"],$_POST['passe'],$_POST['passe2'])){
 				if(empty($_POST['Nom'] or $_POST['Prenom'] or $_POST['classe'] or $_POST['pseudo'] or $_POST['passe'] or $_POST['passe2'])){

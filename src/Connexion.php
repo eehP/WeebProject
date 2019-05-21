@@ -51,7 +51,7 @@
   
       <?php
           if(isset($_POST['username'],$_POST['password'] )){
-            $conn = mysqli_connect("localhost","root","","WeebBase");
+            $conn = mysqli_connect("localhost","weeb","weeb","WeebBase");
             $username=$_POST["username"];
             $password=$_POST["password"];
             $result = mysqli_query($conn,"SELECT * FROM `Table_utilisateur` WHERE `user` like '$username' and `pass` like '$password' ");

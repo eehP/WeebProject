@@ -24,7 +24,7 @@
     <?php 
 
     $classe = $_GET["classe"];
-    $conn = mysqli_connect("localhost","root","","WeebBase");
+    $conn = mysqli_connect("localhost","weeb","weeb","WeebBase");
     $requete=mysqli_query($conn,"select `nom`,`prenom`,`classe` from `table_utilisateur` where `Classe` like '$classe' ");
     ?>
 
