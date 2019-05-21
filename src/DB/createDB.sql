@@ -1,5 +1,5 @@
-create database WeebBase character set 'UTF8';
-use WeebBase;
+create database WeebProject character set 'UTF8';
+use WeebProject;
 
 CREATE TABLE IF NOT EXISTS `Table_utilisateur`( 
 

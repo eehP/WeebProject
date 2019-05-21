@@ -22,7 +22,7 @@
     <div class="col-sm"id="column3">
     <?php//Connection avec la BDD.
 
-        $conn = mysqli_connect("localhost","weeb","weeb","WeebBase");
+        $conn = mysqli_connect("localhost","weeb","weeb","WeebProject");
   
         $reponse = mysqli_query($conn,"SELECT Nom, Prenom, Classe FROM Table_utilisateur ORDER BY Classe");
     ?>
