@@ -112,9 +112,9 @@
        if (!empty($_POST['classe'])){
             $conn = mysqli_connect("localhost","weeb","weeb","WeebProject");
             $classe=$_POST['classe'];
-            $requete=mysqli_query($conn,"select `nom`,`prenom`,`classe` from `table_utilisateur` where `Classe` like '$classe' ");
-            $row=mysqli_fetch_all($requete,MYSQLI_ASSOC);
-            $rowcount=mysqli_num_rows($requete);
+            $result=mysqli_query($conn,"select `Nom`,`Prenom`,`Classe` from `Table_utilisateur` where `Classe` like '$classe' ");
+            $row=mysqli_fetch_all($result,MYSQLI_ASSOC);
+            $rowcount=mysqli_num_rows($result);
             if($rowcount>0){
 
                 header('Location: ../Auth/ListeEleve.php?classe=' . $_POST['classe']);

@@ -25,7 +25,7 @@
 
     $classe = $_GET["classe"];
     $conn = mysqli_connect("localhost","weeb","weeb","WeebProject");
-    $requete=mysqli_query($conn,"select `nom`,`prenom`,`classe` from `table_utilisateur` where `Classe` like '$classe' ");
+    $requete=mysqli_query($conn,"select `Nom`,`Prenom`,`Classe` from `Table_utilisateur` where `Classe` like '$classe' ");
     ?>
 
 
@@ -40,7 +40,7 @@
 
     
     
-    $reponse=mysqli_query($conn,"select `nom`,`prenom`,`classe` from `table_utilisateur` where `Classe` like '$classe' ");
+    $reponse=mysqli_query($conn,"select `Nom`,`Prenom`,`Classe` from `Table_utilisateur` where `Classe` like '$classe' ");
     //$donnees = mysqli_fetch_array($reponse);
     $rowcount=mysqli_num_rows($reponse);
     $donnees = mysqli_fetch_all($reponse,MYSQLI_ASSOC);
@@ -59,7 +59,7 @@
                     <?php 
             
                             for($i=0;$i<$rowcount;$i++){
-                                echo $donnees[$i]['nom']."<br>";
+                                echo $donnees[$i]['Nom']."<br>";
                                 
                                }   
                     ?>
@@ -70,7 +70,7 @@
                     <?php  
             
                             for($i=0;$i<$rowcount;$i++){
-                                echo $donnees[$i]['prenom']."<br>";
+                                echo $donnees[$i]['Prenom']."<br>";
     
                                }
                           
@@ -83,7 +83,7 @@
                     <?php  
             
                             for($i=0;$i<$rowcount;$i++){
-                                echo $donnees[$i]['classe']."<br>";
+                                echo $donnees[$i]['Classe']."<br>";
     
                                }
                           
