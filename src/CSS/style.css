@@ -65,7 +65,7 @@ text-align: center;
   display:block;
 }
 #carousel{
-width:375px;
+width:500px;
 position: absolute;
 top: 250px;
 right: 555px;
@@ -145,13 +145,13 @@ text-align: center;
 
 .BoutonValide{
   position: relative;
-  left:38vh;
+  left:1vh;
   top:10vh;
 }
 
 .Message{
   position:relative;
-  top:10vh;
+  top:-5vh;
   left:85vh;
   color:red;
 }
@@ -198,4 +198,43 @@ text-align: center;
   position: relative;
   left:75vh;
   top:10vh;
+}
+.Champs select{
+  position: relative;
+  width: 168px;
+  left:33vh;
+  bottom:0.5vh;
+  height: 38px;
+  
+}
+.classcenter{
+  position: relative;
+  bottom: -20px;
+}
+.Champs input{
+  position: relative;
+  width: 168px;
+  left:33vh;
+  height: 38px;
+}
+.pseudo{
+  position: relative;
+  bottom: -26px;
+}
+.Nom{
+  position: relative;
+  bottom: -26px;
+}
+.Prenom{
+  position: relative;
+  bottom: -26px;
+}
+.Password{
+  position: relative;
+  bottom: -26px;
+}
+.Champs{
+  top:0;
+  padding-top:0;
+  line-height: 5px;
 }
